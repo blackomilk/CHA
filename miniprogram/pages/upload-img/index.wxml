@@ -1,0 +1,13 @@
+<!--miniprogram/pages/upload-img/index.wxml-->
+<view class="context">
+	<view class="name">
+		<text>相框名称</text>
+		<input type="text" placeholder="给相框起个名字" bindinput="nameInput" />
+	</view>
+	<view class="img">
+		<view>选择图片</view>
+		<view class="select-btn" wx:if="{{!img_url}}" bindtap="selectImg">点我添加</view>
+		<image src="{{img_url}}" wx:if="{{img_url}}"></image>
+	</view>
+<button bindtap="confirm">提交</button>
+</view>

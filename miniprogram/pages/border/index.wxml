@@ -1,0 +1,12 @@
+<view class="container">
+	<view class="box">
+		<block wx:for="{{boxList}}" wx:key="{{index}}">
+			<view class="box-item"
+						bindtap="handleBoxItemClick" 
+						data-item="{{item}}">
+				<image src="{{item.img_url}}" mode="widthFix"></image>
+				<view>{{item.name}}</view>
+			</view>
+		</block>
+	</view>
+</view>

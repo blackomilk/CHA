@@ -1,0 +1,25 @@
+.container {
+	width: 100%;
+	height: auto;
+}
+.box {
+	width: 95%;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  padding: 20rpx;
+	background-color: rgba(233, 223, 223,.5);
+}
+.box-item {
+	width: 45%;
+	height: 350rpx;
+	text-align: center;
+	margin-top: 25rpx;
+	padding: 10rpx;
+	/* background-color: skyblue; */
+}
+.box-item image {
+	max-width: 100%;
+	border-radius: 10%;
+}

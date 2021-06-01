@@ -1,0 +1,19 @@
+<!--pages/selectAvatar/selectAcatar.wxml-->
+<canvas class="canvas" canvas-id="flagctx"></canvas>
+
+<view class="container">
+	<view class="item">
+		<image src="{{box_url}}" wx:if="{{box_url}}"></image>
+		<image src="{{item_url}}" wx:if="{{!box_url}}" mode="widthFix"></image>
+	</view>
+
+	<!-- <view class="img" wx:if="{{select_img}}"></view> -->
+
+	<button plain class="select-img" bindtap="handleSelectImg">选择图片</button>
+	<view class="btn">
+		<button disabled="{{!select_img}}" class='openSetting' open-type="openSetting" bindopensetting='handleSetting'
+			hidden='{{openSettingBtnHidden}}'>授权</button>
+		<button type="primary" disabled="{{!select_img}}" wx:if="{{!showWeCropper}}" class="avatar" bindtap="saveImg">保存头像</button>
+		<!-- <button class="upload" type="primary" bindtap="uploadImage">上传相框</button> -->
+	</view>
+</view>

@@ -1,0 +1,17 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/logs/logs",
+		"pages/border/index",
+		"pages/selectAvatar/index",
+		"pages/upload-img/index"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "宏昆酒店集团",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json"
+}
